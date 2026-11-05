@@ -1,0 +1,68 @@
+.hero {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url("bilder/227-700x450.jpg") center/cover no-repeat;
+    color: #fff;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #343a40;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .social-links a.instagram:hover { background-color: #e1306c; }
+  .social-links a.facebook:hover  { background-color: #1877f2; }
+  .social-links a.youtube:hover   { background-color: #ff0000; }/* Meine Farbnote – ganz oben im style-Bereich */
+  :root {
+    --meine-farbe: #e91e63;          /* hier deinen Farbwert eintragen */
+    --meine-farbe-hell: #fce4ec;     /* hellere Variante für Hintergründe */
+  }
+  
+  /* Navbar in deiner Farbe */
+  .navbar {
+    background-color: var(--meine-farbe) !important;
+  }
+  
+  /* Buttons in deiner Farbe */
+  .btn-light {
+    background-color: var(--meine-farbe-hell);
+    border-color: var(--meine-farbe);
+    color: var(--meine-farbe);
+    font-weight: 600;
+  }
+  
+  /* Akzentstreifen über jeder Jahreszeiten-Card */
+  .season-card .card-body {
+    border-top: 5px solid var(--meine-farbe);
+  }
+  
+  /* Social-Media-Buttons bekommen deine Farbe im Hover */
+  .social-links a:hover {
+    background-color: var(--meine-farbe) !important;
+  }
